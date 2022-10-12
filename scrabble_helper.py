@@ -2,8 +2,6 @@ import regex as re
 from tkinter import *
 from ui import *
 
-
-
 if __name__ == "__main__":
     root = Tk()
     user_interface = Ui(root)
