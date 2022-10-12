@@ -31,4 +31,4 @@ if __name__ == "__main__":
             continue
         candidates.append(word)
 
-    print(candidates) #test
+    print(candidates)
