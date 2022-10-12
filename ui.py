@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import ttk
-
 class Ui:
     def __init__(self,root) -> None:
         root.title("Scrabble helper")
