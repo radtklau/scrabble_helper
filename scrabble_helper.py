@@ -5,9 +5,10 @@ from ui import *
 if __name__ == "__main__":
     root = Tk()
     user_interface = Ui(root)
-
-    l = input("please enter max length of the word: ")
-    r = input("please enter restrictions (e.g. 2a4v): ")
+    user_interface.wait_button_pressed()
+    l = user_interface.get_length()
+    r = user_interface.get_restr()
+    
     r_nums = [e for e in re.split("[^0-9]", r) if e != '']
 
     r_max_num = max(map(int, r_nums))
@@ -31,4 +32,7 @@ if __name__ == "__main__":
             continue
         candidates.append(word)
 
-    print(candidates)
+    user_interface.set_label(candidates)
+    #print(candidates)
+  
+
