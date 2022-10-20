@@ -33,6 +33,6 @@ if __name__ == "__main__":
         candidates.append(word)
 
     user_interface.set_label(candidates) #BUG
-    print(candidates)
+    #print(candidates)
   
 
