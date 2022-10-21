@@ -18,6 +18,7 @@ if __name__ == "__main__":
 
     candidates = []
     f = 0
+    c = 0
     for word in lines:
         if len(word) > int(l) or len(word) < r_max_num:
             continue
@@ -30,9 +31,13 @@ if __name__ == "__main__":
         if f == 1:
             f = 0 
             continue
-        candidates.append(word)
+        if c % 10 == 0:
+            candidates.append(word+"\n")
+        else:
+            candidates.append(word)
+        c += 1
 
-    user_interface.set_label(candidates) #BUG
-    #print(candidates)
+    user_interface.set_label(candidates)
+    root.mainloop()
   
 
